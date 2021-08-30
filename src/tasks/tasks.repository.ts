@@ -20,7 +20,7 @@ async getTasks(filterDto: GetTasksFilterDto): Promise<Task[]> {
   return tasks;
 }
 async createTask(createTaskDto: CreateTaskDto): Promise<Task> {
-        const { title, description } = createTaskDto;
+  const { title, description } = createTaskDto;
   const task = this.create({
       title,
       description,
